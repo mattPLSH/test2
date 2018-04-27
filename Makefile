@@ -10,7 +10,7 @@
 # before running the commands for test
 CXXFLAGS=-std=c++11 -fprofile-arcs -ftest-coverage -g
 
-balanced:o
+balanced.o:
 	g++ $(CXXFLAGS) -g -c balanced.cpp -o balanced.o
 
 test: balanced.o
